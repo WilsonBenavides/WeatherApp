@@ -5,22 +5,30 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+//import { HomePage } from '../pages/home/home';
+
+import { WeatherApiPage } from '../pages/weather-api/weather-api';
+import { ForecastPage } from '../pages/forecast/forecast';
+import { WeatherPage } from '../pages/weather/weather';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
-  ],
+    WeatherApiPage,
+    ForecastPage,
+    WeatherPage
+    ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage
-  ],
+entryComponents: [
+MyApp,
+WeatherApiPage,
+ForecastPage,
+WeatherPage
+],
   providers: [
     StatusBar,
     SplashScreen,
